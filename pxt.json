@@ -1,0 +1,19 @@
+{
+    "name": "Bark-CPX",
+    "description": "",
+    "dependencies": {
+        "circuit-playground": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "adafruit"
+    ],
+    "preferredEditor": "blocksprj"
+}
