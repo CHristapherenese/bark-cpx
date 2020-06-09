@@ -1,12 +1,10 @@
 function barkTone () {
-    music.pewPew.play()
+    music.playTone(40000, music.beat(BeatFraction.Breve))
     light.showRing(
     `red red red red red red black red red red`
     )
-    pins.A1.digitalWrite(true)
     light.setPixelColor(6, 0xffff00)
     pause(5000)
-    pins.A1.digitalWrite(false)
     light.setAll(0x000000)
 }
 input.onLoudSound(function () {
