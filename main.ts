@@ -23,5 +23,5 @@ input.buttonA.onEvent(ButtonEvent.Click, function () {
     barkTone()
 })
 input.setLoudSoundThreshold(200)
-music.setVolume(100)
+music.setVolume(255)
 boot()
