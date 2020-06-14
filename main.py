@@ -10,10 +10,6 @@ def on_loud_sound():
     barkTone()
 input.on_loud_sound(on_loud_sound)
 
-def on_switch_moved_right():
-    pass
-input.on_switch_moved(SwitchDirection.RIGHT, on_switch_moved_right)
-
 def boot():
     light.show_animation(light.rainbow_animation, 1000)
     light.stop_all_animations()
@@ -24,4 +20,5 @@ def on_button_a_click():
 input.button_a.on_event(ButtonEvent.CLICK, on_button_a_click)
 
 input.set_loud_sound_threshold(200)
+music.play_tone(262, music.beat(BeatFraction.BREVE))
 boot()
